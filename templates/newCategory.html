@@ -1,0 +1,10 @@
+<html>
+<h1>Add a new book</h1>
+
+<form action='{{url_for('addCategory')}}' method="post" id = form1>
+<label> Category: <input type = "text" name = "name" placeholder="Name (Text)"</label>
+</form>
+
+<button type="submit" form="form1" value="Submit">Create</button>
+<a href = '{{url_for('showcategories')}}'>Cancel</a>
+</html>

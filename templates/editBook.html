@@ -1,0 +1,6 @@
+<html>
+<h1>Edit a Book</h1>
+<form action='{{url_for('editBook', category_id=category,  book_id=item)}}' method="post" id = form1> <label> New Name: <input type = "text" name = "name" placeholder= "Name"</label></form>
+<button type="submit" form="form1" value="Submit">Edit</button>
+<a href = '{{url_for('showcategories')}}'>Cancel</a>
+</html>

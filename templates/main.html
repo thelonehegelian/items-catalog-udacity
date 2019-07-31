@@ -1,0 +1,34 @@
+<html>
+{% include "header.html" %}
+<head>
+  <link rel=stylesheet type="text/css" href="{{url_for('static', filename='style.css')}}">
+
+</head>
+
+<div style="height: 200px; width: 500px; color: #ffffff;
+	background-image: url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=853&q=80);">
+</div>
+
+<h1>The Bibliomaniac</h1>
+</br>
+See
+<a href='{{url_for('showAllBooks', books=books)}}'>All available books</a>
+</br>
+or
+</br>
+Browse by Category
+</br>
+</br>
+{%for category in categories:%}
+<a href='{{url_for('showBooks', category_id=category.id)}}'>
+{{category.name}}</a>
+</br></br>
+
+{%endfor%}
+
+<a href='{{url_for('addCategory')}}'><strong>Add a Category</strong></a>
+</br>
+<a href='{{url_for('addBook')}}'><strong>Add a Book</strong></a>
+
+
+</html>
