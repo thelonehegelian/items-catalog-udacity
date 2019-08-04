@@ -1,18 +1,16 @@
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
-/*
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-  body, html {
-    height: 100%;
-  }
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	margin: 10px;
+	overflow-x: hidden;
+	padding: 0px;
+}
 
 html,
  {
-  margin: 10;
+  margin: 20;
   padding: 0;
   border: 0;
   font-size: 100%;

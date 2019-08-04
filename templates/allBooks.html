@@ -7,6 +7,7 @@
 </br>
 {%for book in books:%}
 {{book.name}}
+
 </br>
 </br>
 <strong>Description</strong>
@@ -14,7 +15,16 @@
 {{book.description}}
 </br>
 </br>
+{%endfor%}
 
+{%for i in user%}
+</br>
+</br>
+
+{{i.name}}
+</br>
+</br>
+{{i.id}}
 {%endfor%}
 
 
