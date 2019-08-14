@@ -47,10 +47,10 @@ logging into root@167.71.128.240
 - $ sudo nano /etc/apache2/sites-available/catalog.conf
 - Add the lines:
 
-    <VirtualHost *:80>
-       ServerName 167.71.128.240
-       ServerAlias 167.71.128.240
-       ServerAdmin grader@165.22.118.21
+<VirtualHost *:80>
+    ServerName 167.71.128.240
+    ServerAlias 167.71.128.240
+    ServerAdmin grader@165.22.118.21
        WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
        WSGIProcessGroup catalog
        WSGIScriptAlias / /var/www/catalog/catalog.wsgi
