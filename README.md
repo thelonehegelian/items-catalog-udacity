@@ -78,7 +78,7 @@ logging into root@167.71.128.240
 ### Configure the .wsgi File
 - $ cd /var/www/catalog/
 - $ sudo nano catalog.wsgi
-Add the following:
+- Add the following:
     import sys
     import logging
     logging.basicConfig(stream=sys.stderr)
