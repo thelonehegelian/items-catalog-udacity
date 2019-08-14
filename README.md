@@ -3,9 +3,9 @@ Deploying a Flask application on Ubuntu.
 This file contains the software and steps required to deploy a Flask app.
 ### Introduction
 For this application Digital Ocean was used for a Ubuntu Linux server instance. 
-IP Address: 167.71.128.240
-URL: http://www.167.71.128.240.xip.io/
-ssh grader@167.71.128.240 -p 2200
+- IP Address: 167.71.128.240
+- URL: http://www.167.71.128.240.xip.io/
+- ssh grader@167.71.128.240 -p 2200
 
 ### Initial steps
 logging into root@167.71.128.240
