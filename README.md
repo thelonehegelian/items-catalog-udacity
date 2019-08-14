@@ -48,9 +48,10 @@ logging into root@167.71.128.240
 - Add the lines:
 
 <VirtualHost *:80>
-    ServerName 167.71.128.240
-    ServerAlias 167.71.128.240
-    ServerAdmin grader@165.22.118.21
+
+        ServerName 167.71.128.240
+        ServerAlias 167.71.128.240
+        ServerAdmin grader@165.22.118.21
        WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
        WSGIProcessGroup catalog
        WSGIScriptAlias / /var/www/catalog/catalog.wsgi
@@ -66,6 +67,8 @@ logging into root@167.71.128.240
        ErrorLog ${APACHE_LOG_DIR}/error.log
        LogLevel warn
        CustomLog ${APACHE_LOG_DIR}/access.log combined
+    
+    
     </VirtualHost>
     
 - Save and Exit
