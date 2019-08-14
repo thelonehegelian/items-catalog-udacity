@@ -71,7 +71,7 @@ session.commit()
 
 # Book 2
 book2 = Book(name="The City by Lewis Mumford",
-             description="The development of the city from ancient times to
+             description="The development of the city from ancient times to"
              "the modern age. Winner of the National Book Award. "
              "One of the major works of scholarship of the twentieth"
              "century", category=category2)
